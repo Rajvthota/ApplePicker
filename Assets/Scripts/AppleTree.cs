@@ -33,7 +33,7 @@ public class AppleTree : MonoBehaviour {
         pos.x += speed * Time.deltaTime;
         transform.position = pos;
 
-        if (pos.x <= leftAndRightEdge)
+        if (pos.x < -leftAndRightEdge)
         {
             speed = Mathf.Abs(speed);
         }
